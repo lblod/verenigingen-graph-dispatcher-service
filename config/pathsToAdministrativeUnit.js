@@ -8,7 +8,6 @@ import { NAMESPACES as ns } from '../env';
  * NOTE: make sure to use the full URI (no prefixes) for the `type` property.
  */
 
-
 export default [
   // VERENIGING
   {
