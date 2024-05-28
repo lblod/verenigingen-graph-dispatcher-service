@@ -111,11 +111,11 @@ and this snippet can be added to the delta-notifier's configuration.
   match: {
     graph: {
       type: 'uri',
-      value: 'http://eredienst-mandatarissen-consumer/temp-inserts'
+      value: 'http://associations-consumer/temp-inserts'
     }
   },
   callback: {
-    url: 'http://dispatcher-worship-mandates/delta-inserts',
+    url: 'http://dispatcher-associations/delta-inserts',
     method: 'POST'
   },
   options: {
@@ -128,11 +128,11 @@ and this snippet can be added to the delta-notifier's configuration.
   match: {
     graph: {
       type: 'uri',
-      value: 'http://eredienst-mandatarissen-consumer/temp-deletes'
+      value: 'http://associations-consumer/temp-deletes'
     }
   },
   callback: {
-    url: 'http://dispatcher-worship-mandates/delta-deletes',
+    url: 'http://dispatcher-associations/delta-deletes',
     method: 'POST'
   },
   options: {
@@ -202,7 +202,7 @@ Supply a value for them using the `environment` keyword in the
 ### Paths to administrative unit
 
 Some default paths are provided in the `config/pathsToAdministrativeUnit.js`
-file. These should be sufficient to move all data about worship positions to
+file. These should be sufficient to move all data about associations to
 the correct organisation graph. If needed, this file can be overridden by
 mounting a file with the same name in the same folder via a mount in the
 `docker-compose.yml` file. For example:
