@@ -13,7 +13,7 @@ export default [
   {
     type: ns.vereniging`FeitelijkeVereniging`,
     pathToAssociation: `
-    ?subject a <https://data.vlaanderen.be/ns/FeitelijkeVerenigingen#FeitelijkeVereniging> .
+    ?subject a <https://data.vlaanderen.be/ns/FeitelijkeVerenigingen#Vereniging> .
     `,
     allowedInMultipleOrgs: false,
   },
@@ -21,7 +21,7 @@ export default [
   {
     type: ns.person`Person`,
     pathToAssociation: `
-    ?association a <https://data.vlaanderen.be/ns/FeitelijkeVerenigingen#FeitelijkeVereniging> ;
+    ?association a <https://data.vlaanderen.be/ns/FeitelijkeVerenigingen#Vereniging> ;
     <https://data.lblod.info/ns/vertegenwoordigers> ?subject .
     `,
     allowedInMultipleOrgs: true,
@@ -30,7 +30,7 @@ export default [
   {
     type: ns.org`Site`,
     pathToAssociation: `
-    ?association a <https://data.vlaanderen.be/ns/FeitelijkeVerenigingen#FeitelijkeVereniging> ;
+    ?association a <https://data.vlaanderen.be/ns/FeitelijkeVerenigingen#Vereniging> ;
     <http://www.w3.org/ns/org#hasPrimarySite> ?subject .
 
     `,
@@ -40,7 +40,7 @@ export default [
     {
       type: ns.org`Site`,
       pathToAssociation: `
-      ?association a <https://data.vlaanderen.be/ns/FeitelijkeVerenigingen#FeitelijkeVereniging> ;
+      ?association a <https://data.vlaanderen.be/ns/FeitelijkeVerenigingen#Vereniging> ;
       <http://www.w3.org/ns/org#hasSite> ?subject .
       `,
       allowedInMultipleOrgs: true,
@@ -49,7 +49,7 @@ export default [
     {
       type: ns.verenigingen_ext`Doelgroep`,
       pathToAssociation: `
-      ?association a <https://data.vlaanderen.be/ns/FeitelijkeVerenigingen#FeitelijkeVereniging> ;
+      ?association a <https://data.vlaanderen.be/ns/FeitelijkeVerenigingen#Vereniging> ;
       <http://data.lblod.info/vocabularies/FeitelijkeVerenigingen/doelgroep> ?subject .
       `,
       allowedInMultipleOrgs: true,
@@ -58,7 +58,7 @@ export default [
     {
       type: ns.skos`Concept`,
       pathToAssociation: `
-      ?association a <https://data.vlaanderen.be/ns/FeitelijkeVerenigingen#FeitelijkeVereniging> ;
+      ?association a <https://data.vlaanderen.be/ns/FeitelijkeVerenigingen#Vereniging> ;
       <http://www.w3.org/ns/regorg#orgActivity> ?subject .
       `,
       allowedInMultipleOrgs: true,
@@ -69,7 +69,7 @@ export default [
       pathToAssociation: `
       ?site a <http://www.w3.org/ns/org#Site> ;
       <http://data.lblod.info/vocabularies/erediensten/vestigingstype> ?subject .
-      ?association a <https://data.vlaanderen.be/ns/FeitelijkeVerenigingen#FeitelijkeVereniging> .
+      ?association a <https://data.vlaanderen.be/ns/FeitelijkeVerenigingen#Vereniging> .
       ?association ?p ?site .
       `,
       allowedInMultipleOrgs: true,
@@ -80,7 +80,7 @@ export default [
       pathToAssociation: `
       ?site a <http://www.w3.org/ns/org#Site> ;
       <https://data.vlaanderen.be/ns/organisatie#bestaatUit> ?subject .
-      ?association a <https://data.vlaanderen.be/ns/FeitelijkeVerenigingen#FeitelijkeVereniging> .
+      ?association a <https://data.vlaanderen.be/ns/FeitelijkeVerenigingen#Vereniging> .
       ?association ?p ?site .
       `,
       allowedInMultipleOrgs: true,
@@ -89,7 +89,7 @@ export default [
   {
     type: ns.schema`ContactPoint`,
     pathToAssociation: `
-    ?association a <https://data.vlaanderen.be/ns/FeitelijkeVerenigingen#FeitelijkeVereniging> ;
+    ?association a <https://data.vlaanderen.be/ns/FeitelijkeVerenigingen#Vereniging> ;
      <http://schema.org/contactPoint> ?subject .
     `,
     allowedInMultipleOrgs: true,
@@ -98,7 +98,7 @@ export default [
   {
     type: ns.schema`ContactPoint`,
     pathToAssociation: `
-    ?association a <https://data.vlaanderen.be/ns/FeitelijkeVerenigingen#FeitelijkeVereniging> ;
+    ?association a <https://data.vlaanderen.be/ns/FeitelijkeVerenigingen#Vereniging> ;
     org:hasMembership ?membership .
 
     ?membership a org:Membership;
@@ -115,7 +115,7 @@ export default [
   pathToAssociation: `
   ?site a <http://www.w3.org/ns/org#Site> ;
   <http://schema.org/siteAddress> ?subject .
-  ?association a <https://data.vlaanderen.be/ns/FeitelijkeVerenigingen#FeitelijkeVereniging> .
+  ?association a <https://data.vlaanderen.be/ns/FeitelijkeVerenigingen#Vereniging> .
   ?association ?p ?site .
   `,
   allowedInMultipleOrgs: true,
@@ -124,7 +124,7 @@ export default [
  {
   type: ns.adms`Identifier`,
   pathToAssociation: `
-  ?association a <https://data.vlaanderen.be/ns/FeitelijkeVerenigingen#FeitelijkeVereniging> ;
+  ?association a <https://data.vlaanderen.be/ns/FeitelijkeVerenigingen#Vereniging> ;
   <http://www.w3.org/ns/adms#identifier> ?subject .
   `,
   allowedInMultipleOrgs: true,
@@ -136,7 +136,7 @@ export default [
   ?subject a <https://data.vlaanderen.be/ns/generiek#GestructureerdeIdentificator> .
   ?identifier a <http://www.w3.org/ns/adms#Identifier> ;
               <https://data.vlaanderen.be/ns/generiek#gestructureerdeIdentificator> ?subject .
-  ?association a <https://data.vlaanderen.be/ns/FeitelijkeVerenigingen#FeitelijkeVereniging> ;
+  ?association a <https://data.vlaanderen.be/ns/FeitelijkeVerenigingen#Vereniging> ;
   <http://www.w3.org/ns/adms#identifier> ?identifier .
   `,
   allowedInMultipleOrgs: true,
@@ -145,7 +145,7 @@ export default [
 {
   type: ns.org`Membership`,
   pathToAssociation: `
-  ?association a <https://data.vlaanderen.be/ns/FeitelijkeVerenigingen#FeitelijkeVereniging> ;
+  ?association a <https://data.vlaanderen.be/ns/FeitelijkeVerenigingen#Vereniging> ;
   <http://www.w3.org/ns/org#hasMembership> ?subject .
   `,
   allowedInMultipleOrgs: true,
@@ -154,7 +154,7 @@ export default [
 {
   type: ns.person`Person`,
   pathToAssociation: `
-  ?association a <https://data.vlaanderen.be/ns/FeitelijkeVerenigingen#FeitelijkeVereniging> ;
+  ?association a <https://data.vlaanderen.be/ns/FeitelijkeVerenigingen#Vereniging> ;
     <http://www.w3.org/ns/org#hasMembership> ?membership .
   ?membership org:member ?subject .
   `,
